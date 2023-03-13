@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./hand.component.css']
 })
 export class HandComponent {
-
+  show() {
+    console.info("show method");
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Card } from './models';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Day 31 - Deck of Cards';
+
+  random() {
+    console.info("hello");
+  }
+
+  
+  
 }
