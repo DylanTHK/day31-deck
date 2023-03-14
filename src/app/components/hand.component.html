@@ -1,6 +1,13 @@
+<!-- generates single row of player's hands -->
+<!-- will be replicated in root html -->
+<table>
+    <h2>{{ hand.name }}</h2>
+    <tr>
+        <td *ngFor="let c of hand.cards; let i = index">
+            <img src="/assets/cards/card_{{ c.num }}_{{ c.suit }}.png" 
+                (click)="drop(i)">
+            <!-- i captures index of card in hand -->
+        </td>
+    </tr>
+</table>
 
-<div ng-app="" ng-init="card='Clover/card_1_clover'">
-    <img src="/assets/cards/card_1_clover.png" (click)="show()">
-    <br>
-    <button type="button">Drop</button>
-</div>

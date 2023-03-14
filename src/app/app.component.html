@@ -1,9 +1,7 @@
 <h1>{{ title }}</h1>
 
-<!-- <div>
-  Number of Cards: 
-  <input type="number" [placeholder]="handSize" >
-  <button type="button" (click)="generateHand()">Generate</button>
-</div> -->
-
-<app-hand></app-hand>
+<app-hand 
+  *ngFor="let h of hands"
+  [hand]="h"
+  (dropCard)="removeCard($event)"
+></app-hand>

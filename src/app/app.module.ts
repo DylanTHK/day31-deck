@@ -7,7 +7,7 @@ import { HandComponent } from './components/hand.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HandComponent
+    HandComponent,
   ],
   imports: [
     BrowserModule
