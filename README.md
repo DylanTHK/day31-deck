@@ -1,5 +1,7 @@
 # Day31Deck
 
+
+
 1. create new angular project
     - ng new <app_name>
 2. add libraries (if necessary)
